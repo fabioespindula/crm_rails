@@ -63,6 +63,7 @@ blockquote, q {
   padding: 15px 0px 16px 20px;
   background-color: green;
   border-top: 5px solid #000000;
+  margin-bottom: 20px;
 }
 
 #logo {
@@ -106,6 +107,14 @@ blockquote, q {
   font-weight: bold;
   color: green;
   margin-bottom: 10px;
+}
+
+#content p {
+  margin-bottom: 15px;
+}
+
+#content p label {
+  font-weight: bold;
 }
 
 td {
