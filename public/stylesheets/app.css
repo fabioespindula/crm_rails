@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	font-family: "Lucida Grande", Verdana, Tahoma, Arial;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+#home {
+  width: 980px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 960px;
+  float: left;
+  padding: 15px 0px 16px 20px;
+  background-color: green;
+  border-top: 5px solid #000000;
+}
+
+#logo {
+  width: 300px;
+  float: left;
+  font-size: 35px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#menu {
+  width: 650px;
+  float: left;
+  color: #000000;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#menu li {
+  float: left;
+  margin-right: 20px;
+}
+
+#menu li a {
+  display: block;
+  float: left;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#content {
+  width: 980px;
+  float: left;
+  margin-top: 10px;
+}
+
+#content h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 10px;
+}
+
+td {
+  background-color: #BCE1C3;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+th {
+  background-color: #90E17F;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+
+
+
+
+
