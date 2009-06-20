@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.all
+    @projects = Project.find(:all, :joins => "LEFT OUTER JOIN customers ON customers.id = projects.customer_id")
 
     respond_to do |format|
       format.html # index.html.erb
