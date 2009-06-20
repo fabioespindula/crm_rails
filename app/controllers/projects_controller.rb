@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+  
+  before_filter :load_customers, :only => [:new, :create, :edit, :update]
+  
   # GET /projects
   # GET /projects.xml
   def index
@@ -81,5 +84,11 @@ class ProjectsController < ApplicationController
       format.html { redirect_to(projects_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  protected
+  
+  def load_customers
+    @customers = Customer.find(:all).collect { |c| [c.name, c.id] }
   end
 end

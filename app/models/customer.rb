@@ -6,4 +6,8 @@ class Customer < ActiveRecord::Base
   validates_format_of :phone, :with => /^(\d|\s)*$/
   
   validates_inclusion_of :rating, :in => 1..5
+  
+  def to_s
+    name
+  end
 end
