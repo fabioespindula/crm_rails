@@ -6,11 +6,16 @@
 <body>
   <div id="wrap">
     <div id="header">
-      <h1 id="logo">CRM</h1>
+      <h1 id="logo">
+        <%= link_to_unless_current "CRM", root_url %>
+      </h1>
       <ul id="menu">
           <li><%= link_to_unless_current "Home", root_url %></li>
           <li><%= link_to_unless_current "Customers", customers_url %></li>
           <li><%= link_to_unless_current "Projects", projects_url %></li>
+          <li><%= link_to_unless_current "Taks", tasks_url %></li>
+          <li><%= link_to_unless_current "Users", users_url %></li>
+          <li><%= link_to_unless_current "Contracts", contracts_url %></li>
       </ul>
     </div>
     <div id="content"><%= yield %></div>

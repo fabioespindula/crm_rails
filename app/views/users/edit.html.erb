@@ -1,24 +1,10 @@
-<h1>Editing user</h1>
+<h2>Editing user</h2>
 
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :login %><br />
-    <%= f.text_field :login %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.text_field :password %>
-  </p>
-  <p>
-    <%= f.label :kind %><br />
-    <%= f.text_field :kind %>
-  </p>
+  <%= render :partial => "form", :locals => { :f => f } %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>

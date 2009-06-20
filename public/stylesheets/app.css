@@ -70,7 +70,14 @@ blockquote, q {
   width: 300px;
   float: left;
   font-size: 35px;
-  color: #FFFFFF;
+  color: #FFF;
+  font-weight: bold;
+}
+
+#logo a {
+  font-size: 35px;
+  color: #FFF;
+  text-decoration: none;
   font-weight: bold;
 }
 
