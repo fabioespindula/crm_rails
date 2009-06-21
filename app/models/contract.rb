@@ -4,4 +4,8 @@ class Contract < ActiveRecord::Base
 
   validates_presence_of :name, :code, :description, :started_at, :leader_id, :project_id
   validates_inclusion_of :status, :in => %w(prospecting accepted canceled)
+  
+  def to_s
+    name
+  end
 end
